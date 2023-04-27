@@ -1,0 +1,312 @@
+:root {
+  overflow-x: hidden;
+}
+
+#background {
+  background: #144422 no-repeat center center fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  height: 4042px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.karla {
+  font-family: 'Karla';
+  font-style: normal;
+}
+
+#brandName {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.navbarHeader {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  float: right;
+}
+
+.yellowText {
+  color: #FDFF94;
+}
+
+.orangeText {
+  color: #F1C265;
+}
+
+.lora {
+  font-family: 'Lora';
+  font-style: normal;
+}
+
+#heroText {
+  font-size: 54px;
+  line-height: 61px;
+  text-transform: capitalize;
+  width: 469px;
+  margin-top: 270px;
+}
+
+.bodyText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#sneaker {
+  position: absolute;
+  top: 343px;
+  width: 494px;
+  height: 277px;
+}
+
+#sneakerCircle {
+  border-radius: 100%;
+  position: absolute;
+  top: 178px;
+  width: 608px;
+  height: 608px;
+  background: rgba(96, 13, 99, 0.6);
+  mix-blend-mode: normal;
+  box-shadow: 57px 20px 16px rgba(0, 0, 0, 0.25);
+}
+
+#aboutSection {
+  position: relative;
+  width: 885px;
+  height: 178px;
+  left: calc(50% - 885px/2 + 0.5px);
+  top: 370px;
+  background: rgba(135, 170, 192, 0.3);
+}
+
+.sectionHeader {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+#aboutUs {
+  position: relative;
+  width: 137px;
+  height: 26px;
+  top: 22px;
+  left: 374px;
+}
+
+#aboutText {
+  position: relative;
+  width: 739px;
+  height: 76px;
+  text-align: center;
+  top: 40px;
+  left: 85px;
+}
+
+#packagesSection {
+  position: relative;
+  width: 1084px;
+  top: 560px;
+}
+
+.h2Text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+#packagesSubHeader {
+  width: 463px;
+  height: 108px;
+  margin-top: 10px;
+}
+
+#packagesMiniHeader {
+  width: 450px;
+  height: 57px;
+}
+
+#authenticitySection {
+  position: absolute;
+  width: 390px;
+  height: 207px;
+  top: 0px;
+  left: 680px;
+}
+
+#authImage {
+  margin-top: 10px;
+  width: 151px;
+  height: 171px;
+}
+
+#authText {
+  position: absolute;
+  top: 72px;
+  width: 220px;
+  height: 38px;
+  left: 165px;
+}
+
+.package {
+  position: absolute;
+  width: 345px;
+  height: 390px;
+  background: rgba(241, 194, 101, 0.2);
+  border-radius: 3px;
+  top: 232px;
+}
+
+.packageHeader {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  height: 33.69px;
+}
+
+.packagePrice {
+  position: relative;
+  text-align: center;
+  top: 42px;
+  height: 48px;
+}
+
+.packageDescription {
+  position: relative;
+  margin-top: 90px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.packageButton {
+  position: relative;
+  top: 32px;
+  left: 39px;
+  background: #F1C265;
+  border-radius: 30px;
+  color: #600D63;
+  width: 268px;
+  height: 69px;
+  border: 0px;
+}
+
+.packageButton:hover {
+  background: #FDFF94;
+  color: black;
+}
+
+#customSneaker {
+  width: 511px;
+  height: 286px;
+  position: absolute;
+  top: 723px;
+}
+
+#customSneakerCircle {
+  position: absolute;
+  width: 331px;
+  height: 331px;
+  background: rgba(253, 255, 148, 0.75);
+  filter: blur(57px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  top: 695px;
+  left: 90px;
+}
+
+#customizationSection {
+  position: absolute;
+  background: rgba(96, 13, 99, 0.56);
+  border-radius: 3px;
+  width: 525px;
+  height: 392px;
+  top: 655px;
+  left: 545px;
+}
+
+#bulkSection {
+  position: absolute;
+  width: 923.08px;
+  height: 295px;
+  top: 1335px;
+  left: 70px;
+}
+
+#bulkSubsection {
+  position: absolute;
+  top: 44px;
+  left: 618px;
+}
+
+#testimonialSection {
+  position: absolute;
+  width: 1065px;
+  height: 394px;
+  top: 1918px;
+}
+
+#testimonialSubheader {
+  position: absolute;
+  top: 38px;
+  text-align: center;
+  width: 367px;
+  left: 349px;
+}
+
+.testimonial {
+  position: absolute;
+  width: 345px;
+  height: 226px;
+  background: rgba(0, 0, 0, 0.4);
+  top: 168px;
+  text-align: center;
+}
+
+.testimonialName {
+  position: relative;
+  top: 20px;
+  letter-spacing: 0.13em;
+}
+
+.testimonialBody {
+  position: relative;
+  top: 65px;
+  width: 317px;
+  left: 14px;
+}
+
+#footer {
+  position: absolute;
+  width: 710px;
+  height: 116px;
+  top: 2485px;
+  left: 177px;
+}
+
+.footerHeader {
+  position:absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+#footerBar{
+  position:absolute;
+  bottom:0px;
+  background: linear-gradient(89.67deg, rgba(135, 170, 192, 0.3) -0.92%, rgba(241, 194, 101, 0.74) 49.71%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width:100%;
+  height:61px;
+}
