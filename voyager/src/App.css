@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #002B43;
+}
+
+.h1 {
+  background: linear-gradient(121.48deg, #DBE4F5 25.43%, #2D90D6 68.99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.elipse{
+  background: linear-gradient(180deg, rgba(0, 43, 67, 0.1) 22.98%, #155A88 57.88%, #2D90D6 122.98%);
+  filter: blur(110px);
+  border-top-left-radius: 100%;
+  border-top-right-radius:100%;
+}
+@layer components {
+  .bodyText {
+    @apply font-body font-normal text-[24px] leading-[32px] tracking-[0.075em] text-lawn;
+  }
+
+  .navText {
+    @apply font-enriqueta font-medium text-[24px] leading-[32px] tracking-[0.115em] text-lawn cursor-pointer;
+  }
+
+  .h1 {
+    @apply font-enriqueta font-bold text-[64px] leading-[69px] uppercase bg-clip-text text-transparent;
+  }
+
+  .h2{
+    @apply font-enriqueta font-medium text-[54px] leading-[72px] text-center tracking-[0.115em] capitalize text-white
+  }
+
+  .sectionHeader{
+    @apply font-enriqueta font-semibold text-[40px] leading-[54px] tracking-[0.2em] uppercase text-sky;
+  }
+  .footerText{
+    @apply font-enriqueta font-normal text-[20px] leading-[27px] uppercase text-lawn cursor-pointer;
+  }
+}
