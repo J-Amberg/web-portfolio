@@ -61,11 +61,6 @@ function App() {
         href='https://fonts.googleapis.com/css2?family=Comme:wght@400;500;700&family=Delius+Unicase&family=Enriqueta:wght@400;500;600;700&family=Gowun+Dodum&display=swap'
         rel='stylesheet'
       />
-      <div className='click'>
-        <div className='click'>
-          <div className='click'>Click Me</div>
-        </div>
-      </div>
       <div style={containerStyle}>
         {/*Navbar*/}
         <div className='navText mt-[33px]'>
