@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #002b43;
+  overflow-x: hidden;
+}
+
+.h1 {
+  background: linear-gradient(121.48deg, #dbe4f5 25.43%, #2d90d6 68.99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.elipse {
+  background: linear-gradient(180deg, rgba(0, 43, 67, 0.1) 22.98%, #176aa1 57.88%, #01385f 122.98%);
+  filter: blur(36px);
+  width: 100%;
+  height: 100%;
+}
+
+.stateAbbreviation {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.state {
+  stroke-width: 0.97063118000000004;
+  fill: #ffa323;
+  cursor: pointer;
+  transition: all 0.1s;
+  transform-origin: 40% 19%;
+}
+
+.hoveredState {
+  fill: #ff9400;
+  cursor:pointer;
+}
+
+.visitedState {
+  stroke-width: 0.97063118000000004;
+  transition: all 0.1s;
+  transform-origin: 40% 19%;
+  fill: #004a2f;
+}
+
+.notHoveredState {
+  transition: all 0.1s ease;
+  fill: #a34e00;
+}
+
+.notHoveredVisited {
+  transition: all 0.1s ease;
+  fill: #00160e;
+  cursor:pointer;
+}
+
+#sunInner{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: #F5F5F5;
+  filter: blur(45.5px);
+  border-radius:100%;
+}
+#sun{
+  position: absolute;
+  width: 255px;
+  height: 255px;
+  background: #FE982E;
+  filter: blur(44.5px);
+  border-radius:100%;
+}
+#sunOuter{
+  position: absolute;
+  width: 426px;
+  height: 426px;  
+  background: #FDD65D;
+  filter: blur(75.5px); 
+  border-radius:100%;
+}
+
+#moonOuter{
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  border-radius:100%;
+  background: #FEF7DF;
+  filter: blur(10px);
+}
+#moonInner{
+  position: absolute;
+  width: 174px;
+  height: 174px;
+  background: #E7E4E4;
+  filter: blur(20px);
+  border-radius:100%;
+}
+#crater1{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: #CCCCCC;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(2.5px);
+  border-radius:100%;
+}
+#crater2{
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background: #B8B8B8;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(4px);
+  border-radius:100%;
+}
+#crater3{
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background: #D9D9D9;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(2.5px);
+  border-radius:100%;
+}
+#crater4{
+  position: absolute;
+  width: 31px;
+  height: 41px;
+  border-radius:100%;
+  background: #C7C7C7;
+  box-shadow: inset 0px 14px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(3.5px);
+}
+#crater5{
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background: #D9D9D9;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(2px);
+  border-radius:50%;
+}
+#crater6{
+  position: absolute;
+  width: 46px;
+  height: 33px;
+  background: #D9D9D9;
+  box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(4.5px);
+  border-radius:50%;
+}
+
+#submitButton:hover{
+  color: #27F2FF;
+  cursor:pointer;
+}
+
+/* reveal animation*/
+@keyframes enter-left-animation {
+  0% {
+    /*transform: translateY(100px);*/
+    left:-1000px;
+    opacity: 0;
+  }
+  100% {
+    /*transform: translateY(0);*/
+    left:0;
+    opacity: 1;
+  }
+}
+@keyframes enter-right-animation{
+  0% {
+    /*transform: translateY(100px);*/
+    right:-1000px;
+    opacity: 0;
+  }
+  100% {
+    /*transform: translateY(0);*/
+    right:0;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-left-animation {
+    animation: enter-left-animation 0.8s 1;
+  }
+  .reveal-right-animation{
+    animation: enter-right-animation 0.8s 1;
+  }
+}
+
+#rocket{
+  animation: rocketship-animation 1.5s forwards;
+  animation-timing-function: linear;
+  z-index:100;
+}
+/* reveal animation*/
+@keyframes rocketship-animation{
+  0% {
+    left:1100px;
+    top:1050px;
+    transform:rotate(45deg) scale(0.05);
+   
+  }
+  19%{
+    transform:rotate(45deg) scale(0.4);
+  }
+  20%{
+    left:1300px;
+    top:800px;
+    transform:rotate(0deg) scale(0.4);
+  }
+  39%{
+    transform:rotate(0deg) scale(0.8);
+  }
+  40%{
+    left:1300px;
+    top:500px;
+    transform:rotate(270deg) scale(0.8);
+  }
+  59%{
+    transform:rotate(270deg) scale(1);
+  }
+  60%{
+    left:200px;
+    top:500px;
+    transform:rotate(180deg);
+  }
+  79%{
+    left:200px;
+    top:1100px;
+    transform: rotate(180deg);
+  }
+  80%{
+    left:200px;
+    top:1100px;
+    transform:rotate(80deg);
+  }
+  100% {
+    /*transform: translateY(0);*/
+    left:120vw;
+    top: 800px;
+    transform:rotate(80deg) scale(1);
+  }
+}
+
+#moon{
+  width: 195px;
+  height: 195px;
+  animation: moon-animation 1s ease-in;
+  z-index:100;
+}
+
+@keyframes moon-animation{
+  0%{
+    transform:rotate(0deg);
+    transform-origin: 50% 50%;
+  } 
+  100%{ 
+    transform:rotate(1080deg);
+    transform-origin: 50% 50%; 
+  }
+}
+@layer components {
+  .bodyText {
+    @apply font-body font-normal text-[24px] leading-[32px] tracking-[0.075em] text-lawn;
+  }
+
+  .navText {
+    @apply font-enriqueta font-medium text-[24px] leading-[32px] tracking-[0.115em] text-lawn cursor-pointer;
+  }
+
+  .h1 {
+    @apply font-enriqueta font-bold text-[64px] leading-[69px] uppercase bg-clip-text text-transparent;
+  }
+
+  .h2 {
+    @apply font-enriqueta font-medium text-[54px] leading-[72px] text-center tracking-[0.115em] capitalize text-white;
+  }
+
+  .sectionHeader {
+    @apply font-enriqueta font-semibold text-[40px] leading-[54px] tracking-[0.2em] uppercase text-sky;
+  }
+
+  .footerText {
+    @apply font-enriqueta font-normal text-[20px] leading-[27px] uppercase text-lawn cursor-pointer;
+  }
+
+  .stateAbbreviation {
+    @apply absolute z-[31] font-comme font-medium text-[40px] leading-[38px] uppercase tracking-[-0.07em] text-black cursor-pointer;
+  }
+
+  .stateLine {
+    @apply absolute border-[2px] border-turquoise fill-turquoise;
+  }
+
+  #submitButton{
+    @apply bg-[rgba(0,0,0,0.85)] p-0  mt-[30px] rounded-[26px] w-[360px] h-[99px] tracking-[0.51em] sectionHeader m-auto flex justify-center items-center;
+  }
+}
